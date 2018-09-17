@@ -1,4 +1,3 @@
 UPDATE characters
-SET species = "Martian"
-ORDER BY species LIMIT 1
+SET species = "Martian" WHERE MAX (characters.id)
 ;
